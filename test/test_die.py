@@ -1,5 +1,5 @@
 import unittest
-from random_code import RollableDie
+from dice_package.dice import RollableDie
 
 class TestDie(unittest.TestCase):
     def setUp(self):

@@ -10,7 +10,7 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@master
       with:
-        python-version: 3.7
+        python-version: 3.9.13
     - name: Generate Report
       run: |
         pip install codecov

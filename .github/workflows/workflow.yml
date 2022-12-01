@@ -13,6 +13,7 @@ jobs:
         python-version: 3.9.13
     - name: Generate Report
       run: |
+        echo $HOME
         pip install codecov
         pip install pytest-cov
         pytest

@@ -7,12 +7,13 @@ jobs:
       OS: ubuntu-latest
       PYTHON: '3.9'
     steps:
+    - name: checkout repo
+      uses: actions/checkout@v3
     - name: Setup Python
       uses: actions/setup-python@master
       with:
         python-version: 3.9.13
     - name: Generate Report
-      working-directory: $HOME/dwarak100/codecov_python_test/
       run: |
         echo $HOME
         pip install codecov

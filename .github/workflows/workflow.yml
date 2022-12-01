@@ -12,6 +12,7 @@ jobs:
       with:
         python-version: 3.9.13
     - name: Generate Report
+      working-directory: /..
       run: |
         pip install codecov
         pip install pytest-cov

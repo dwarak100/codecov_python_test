@@ -12,6 +12,7 @@ jobs:
       with:
         python-version: 3.9.13
     - name: Generate Report
+      working-directory: $HOME/dwarak100/codecov_python_test/
       run: |
         echo $HOME
         pip install codecov
